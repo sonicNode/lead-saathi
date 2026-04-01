@@ -1,0 +1,264 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  background:
+    radial-gradient(circle at top left, rgba(252, 211, 77, 0.55), transparent 28%),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.2), transparent 20%),
+    linear-gradient(180deg, #fff8eb 0%, #f7fafc 100%);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  margin-top: 0.45rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 16px;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.app-shell {
+  width: min(1200px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  color: #c2410c;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 1.05;
+}
+
+.hero-copy {
+  max-width: 60ch;
+  font-size: 1rem;
+  color: #334155;
+}
+
+.status-card,
+.panel,
+.notice {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.status-card {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.status-card strong {
+  font-size: 1.9rem;
+}
+
+.notice {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+}
+
+.notice-info {
+  border-left: 6px solid #2563eb;
+}
+
+.notice-success {
+  border-left: 6px solid #16a34a;
+}
+
+.notice-error {
+  border-left: 6px solid #dc2626;
+}
+
+.grid-layout {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.panel {
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 1.25rem 1.25rem 0;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.panel-header p {
+  margin: 0.35rem 0 0;
+  color: #475569;
+}
+
+.panel-body {
+  padding: 1.25rem;
+}
+
+.form-stack,
+.list-stack,
+.history-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.primary-button,
+.secondary-button,
+.ghost-button {
+  border-radius: 999px;
+  padding: 0.8rem 1.15rem;
+  font-weight: 700;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(234, 88, 12, 0.28);
+}
+
+.secondary-button {
+  background: #0f172a;
+  color: #fff;
+}
+
+.ghost-button {
+  background: rgba(15, 23, 42, 0.06);
+  color: #0f172a;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.ghost-button:hover {
+  transform: translateY(-1px);
+}
+
+.primary-button:disabled,
+.secondary-button:disabled,
+.ghost-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.summary-card,
+.list-item,
+.history-item {
+  border-radius: 20px;
+  background: #f8fafc;
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(234, 88, 12, 0.14);
+  color: #c2410c;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.list-item-head,
+.history-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.audio-preview {
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.label {
+  font-weight: 700;
+}
+
+.error-text {
+  color: #dc2626;
+  margin: 0.5rem 0 0;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    width: min(100vw - 1rem, 100%);
+  }
+}

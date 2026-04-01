@@ -1,0 +1,10 @@
+Lead Saathi API running on port 5050 with memory storage and mock voice provider.
+[0mGET / [32m200[0m 2.820 ms - 399[0m
+[0mGET /api/health [32m200[0m 0.938 ms - 102[0m
+[0mGET / [32m200[0m 1.404 ms - 399[0m
+[0mGET /assets/index-CXysdq4S.css [32m200[0m 1.958 ms - 3227[0m
+[0mGET /assets/index-CYuXjabx.js [32m200[0m 2.261 ms - 154320[0m
+[0mGET /api/health [32m200[0m 0.412 ms - 102[0m
+[0mGET /favicon.ico [32m200[0m 2.257 ms - 399[0m
+[0mGET /favicon.ico [36m304[0m 0.918 ms - -[0m
+[0mGET /api/health [32m200[0m 0.279 ms - 102[0m
